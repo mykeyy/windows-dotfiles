@@ -16,8 +16,13 @@ if ((Get-Command oh-my-posh -ErrorAction SilentlyContinue) -and (Test-Path -Lite
 }
 
 # --- 4. Startup Fetch ---
+$fastfetchPackage = Get-ChildItem -Path "$env:LOCALAPPDATA\Microsoft\WinGet\Packages\Fastfetch-cli.Fastfetch_*" -Directory -ErrorAction SilentlyContinue | Select-Object -First 1
+if ($fastfetchPackage -and $env:PATH -notlike "*$($fastfetchPackage.FullName)*") {
+    $env:PATH += ";$($fastfetchPackage.FullName)"
+}
+
 if (Get-Command fastfetch -ErrorAction SilentlyContinue) {
-    Clear-Host
+    try { Clear-Host } catch {}
     fastfetch
 }
 

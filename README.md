@@ -31,7 +31,7 @@ The repo is private while I clean up the rough edges. Once I am comfortable with
 | **YASB** | The top bar, widgets, and styling |
 | **Windhawk** | The dock-like taskbar and notification center tweaks |
 
-Windows Terminal opens in focus mode, which is where the borderless look comes from. PowerShell loads the Oh My Posh theme and then runs Fastfetch. The Terminal config currently uses CaskaydiaCove Nerd Font Mono, while YASB uses JetBrainsMono NFP. JetBrains Mono is still the font I tend to reach for first, especially when I want Nerd Font icons.
+Windows Terminal opens in focus mode, which is where the borderless look comes from. PowerShell loads the Oh My Posh theme and then runs Fastfetch. Terminal and YASB both use JetBrains Mono Nerd Font variants. JetBrains Mono is still the font I tend to reach for first, especially when I want Nerd Font icons.
 
 ## what is here
 
@@ -60,11 +60,10 @@ winget install AmN.yasb
 winget install fastfetch
 ```
 
-Then install the Nerd Font families used by the configs:
+Then install JetBrains Mono Nerd Font:
 
 ```powershell
 oh-my-posh font install JetBrainsMono
-oh-my-posh font install CaskaydiaCove
 ```
 
 Windhawk is optional. You only need it if you want the same taskbar and notification center changes. The mods and import notes are in [`windhawk/README.md`](windhawk/README.md).
