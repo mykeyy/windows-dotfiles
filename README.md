@@ -4,11 +4,11 @@
 
 **my small, Rose Pine corner of Windows 11**
 
-`PowerShell 7` &nbsp; `Windows Terminal` &nbsp; `YASB` &nbsp; `Fastfetch` &nbsp; `Oh My Posh` &nbsp; `Windhawk`
+`PowerShell 7` &nbsp; `Windows Terminal` &nbsp; `YASB` &nbsp; `Fastfetch` &nbsp; `Oh My Posh` &nbsp; `Windhawk` &nbsp; `Zen Browser`
 
 ![Rose Pine](https://img.shields.io/badge/theme-Rose_Pine-c4a7e7?style=flat-square&labelColor=191724)
 ![Windows 11](https://img.shields.io/badge/Windows-11-9ccfd8?style=flat-square&labelColor=191724)
-![work in progress](https://img.shields.io/badge/status-work_in_progress-ebbcba?style=flat-square&labelColor=191724)
+![public](https://img.shields.io/badge/status-public-ebbcba?style=flat-square&labelColor=191724)
 
 </div>
 
@@ -18,7 +18,7 @@ A few people have asked for my Windows configs, so I finally started putting the
 
 This is the setup from my Acer laptop. It is not a giant Windows makeover, and I am not trying to replace every part of the desktop. I mostly wanted the things I look at every day to feel like they belong together: a borderless terminal, a clean prompt, Fastfetch, YASB, and a couple of taskbar tweaks. Rose Pine ties all of it together.
 
-The repo is private while I clean up the rough edges. Once I am comfortable with the instructions and everything is safe to copy, I plan to make it public.
+This repo is public now. I have cleaned out the machine-only and private bits, but it is still a personal setup, so treat it as a starting point and change anything that does not fit your own workflow.
 
 ## the setup
 
@@ -30,6 +30,7 @@ The repo is private while I clean up the rough edges. Once I am comfortable with
 | **Fastfetch** | System info and my custom text logo |
 | **YASB** | The top bar, widgets, and styling |
 | **Windhawk** | The dock-like taskbar and notification center tweaks |
+| **Zen Browser** | Nebula UI CSS, themes, and a few portable browser preferences |
 
 Windows Terminal opens in focus mode, which is where the borderless look comes from. PowerShell loads the Oh My Posh theme and then runs Fastfetch. Terminal and YASB both use JetBrains Mono Nerd Font variants. JetBrains Mono is still the font I tend to reach for first, especially when I want Nerd Font icons.
 
@@ -43,6 +44,7 @@ windows-dotfiles/
 |-- windhawk/           # exports for the active visual mods
 |-- windows-terminal/   # terminal settings and color scheme
 |-- yasb/               # bar config and stylesheet
+|-- zen/                # Zen Browser CSS, themes, and portable preferences
 `-- STARTUP.md          # what launches with Windows
 ```
 
@@ -81,8 +83,14 @@ Back up anything you already have before copying these files. They are my person
 | `windows-terminal/settings.json` | `%LOCALAPPDATA%\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json` |
 | `powershell/Microsoft.PowerShell_profile.ps1` | The path printed by `$PROFILE` in PowerShell 7 |
 | `oh-my-posh/rose-pine.omp.json` | `%USERPROFILE%\oh-my-posh\rose-pine.omp.json` |
+| `zen/chrome/` | The `chrome` folder inside the active Zen profile, found through `about:support` |
+| `zen/user.js` | The root of the active Zen profile, beside the `chrome` folder |
 
 The PowerShell profile checks for Scoop shims, loads WinGet's command-not-found module when it is available, and adds Bun's user bin folder to `PATH`. Optional tools are skipped when they are not installed, so the profile should not fall apart just because one piece is missing.
+
+### Zen Browser
+
+Zen is included as a visual config, not a full browser backup. Open `about:support` in Zen and use **Open Profile Folder**, then copy this repo's `zen/chrome/` folder and `zen/user.js` into that profile. The detailed notes are in [`zen/README.md`](zen/README.md).
 
 ### YASB weather
 
