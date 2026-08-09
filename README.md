@@ -27,7 +27,7 @@ This repo is public now. I have cleaned out the machine-only and private bits, b
 | **Windows Terminal** | Focus mode, acrylic transparency, zero padding, and a hidden scrollbar |
 | **PowerShell 7** | My everyday shell |
 | **Oh My Posh** | The Rose Pine prompt |
-| **Fastfetch** | System info and my custom text logo |
+| **Fastfetch** | A Rose Pine-ish layout that reads the current PC, plus an easy-to-replace text logo |
 | **YASB** | The top bar, widgets, and styling |
 | **Windhawk** | The dock-like taskbar and notification center tweaks |
 | **Zen Browser** | Zen Mods, Nebula UI CSS, and portable browser preferences |
@@ -45,6 +45,8 @@ windows-dotfiles/
 |-- windows-terminal/   # terminal settings and color scheme
 |-- yasb/               # bar config and stylesheet
 |-- zen/                # Zen Browser UI CSS, active mod settings, and preferences
+|-- wallpapers/         # the wallpaper used in this setup
+|-- LICENSE             # MIT license for the configs and future scripts
 `-- STARTUP.md          # what launches with Windows
 ```
 
@@ -88,6 +90,14 @@ Back up anything you already have before copying these files. They are my person
 
 The PowerShell profile checks for Scoop shims, loads WinGet's command-not-found module when it is available, and adds Bun's user bin folder to `PATH`. Optional tools are skipped when they are not installed, so the profile should not fall apart just because one piece is missing.
 
+### Fastfetch
+
+The Fastfetch config now uses the hardware from whichever PC runs it instead of carrying over my Acer name, GPU, or social details. You can change the text logo, colours, shown drives, and optional personal lines in [`fastfetch/README.md`](fastfetch/README.md).
+
+### Wallpaper
+
+The dark geometric wallpaper from this setup is in [`wallpapers/`](wallpapers/). It is optional; the configs work without it. The quick install note is in [`wallpapers/README.md`](wallpapers/README.md).
+
 ### Zen Browser
 
 Zen is included as a visual config, not a full browser backup. Open `about:support` in Zen and use **Open Profile Folder**, then copy this repo's `zen/chrome/` folder and `zen/user.js` into that profile. The detailed notes are in [`zen/README.md`](zen/README.md).
@@ -115,3 +125,7 @@ YASB launches from a shortcut in the Windows Startup folder. Windhawk and PowerT
 - Vencord extras if they make sense here
 
 For now, this is just the setup I actually use. Feel free to borrow a file, change the colors, or pull the whole thing apart for your own desktop.
+
+## license
+
+The configs and any scripts I add here are available under the [MIT License](LICENSE). The wallpaper is shared as part of this setup, but it is an image asset rather than code, so do not assume the MIT license gives you rights to redistribute it outside this repo.
