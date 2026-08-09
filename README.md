@@ -30,7 +30,7 @@ This repo is public now. I have cleaned out the machine-only and private bits, b
 | **Fastfetch** | System info and my custom text logo |
 | **YASB** | The top bar, widgets, and styling |
 | **Windhawk** | The dock-like taskbar and notification center tweaks |
-| **Zen Browser** | Nebula UI CSS, themes, and a few portable browser preferences |
+| **Zen Browser** | Zen Mods, Nebula UI CSS, and portable browser preferences |
 
 Windows Terminal opens in focus mode, which is where the borderless look comes from. PowerShell loads the Oh My Posh theme and then runs Fastfetch. Terminal and YASB both use JetBrains Mono Nerd Font variants. JetBrains Mono is still the font I tend to reach for first, especially when I want Nerd Font icons.
 
@@ -44,7 +44,7 @@ windows-dotfiles/
 |-- windhawk/           # exports for the active visual mods
 |-- windows-terminal/   # terminal settings and color scheme
 |-- yasb/               # bar config and stylesheet
-|-- zen/                # Zen Browser CSS, themes, and portable preferences
+|-- zen/                # Zen Browser UI CSS, active mod settings, and preferences
 `-- STARTUP.md          # what launches with Windows
 ```
 

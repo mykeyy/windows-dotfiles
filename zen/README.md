@@ -1,8 +1,13 @@
 # Zen Browser
 
-This folder is the visual part of my Zen setup. It includes `userChrome.css`, the Nebula CSS files it uses, and the Zen themes that were installed in the source profile.
+This folder is the visual part of my Zen setup. It includes `userChrome.css`, the Nebula CSS files it uses, and the generated CSS for the Zen Mods that are actually enabled in the source profile.
 
-It does not include the browser profile itself. Saved passwords, cookies, sessions, history, downloads, extensions, extension storage, sync data, workspace IDs, and search history are intentionally left out.
+The active Zen Mods are:
+
+- **Transparent Zen** by sameerasw: transparent browser surfaces, a 165px compact sidebar, URL-bar zoom, tab-switch animation, trackpad animation, and transparent Glance.
+- **Better Unloaded Tabs** by Felkazz: makes unloaded tabs greyscale and transparent.
+
+It does not include the browser profile itself, installed Zen themes, or unused Zen Mods. Saved passwords, cookies, sessions, history, downloads, extensions, extension storage, sync data, workspace IDs, and search history are intentionally left out.
 
 ## Install
 
