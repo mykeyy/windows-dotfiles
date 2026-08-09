@@ -44,7 +44,7 @@ windows-dotfiles/
 |-- windhawk/           # exports for the active visual mods
 |-- windows-terminal/   # terminal settings and color scheme
 |-- yasb/               # bar config and stylesheet
-|-- zen/                # Zen Browser UI CSS, active mod settings, and preferences
+|-- zen-browser/        # Zen Browser UI CSS, active mod settings, and preferences
 |-- wallpapers/         # the wallpaper used in this setup
 |-- LICENSE             # MIT license for the configs and future scripts
 `-- STARTUP.md          # what launches with Windows
@@ -85,8 +85,8 @@ Back up anything you already have before copying these files. They are my person
 | `windows-terminal/settings.json` | `%LOCALAPPDATA%\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json` |
 | `powershell/Microsoft.PowerShell_profile.ps1` | The path printed by `$PROFILE` in PowerShell 7 |
 | `oh-my-posh/rose-pine.omp.json` | `%USERPROFILE%\oh-my-posh\rose-pine.omp.json` |
-| `zen/chrome/` | The `chrome` folder inside the active Zen profile, found through `about:support` |
-| `zen/user.js` | The root of the active Zen profile, beside the `chrome` folder |
+| `zen-browser/chrome/` | The `chrome` folder inside the active Zen profile, found through `about:support` |
+| `zen-browser/user.js` | The root of the active Zen profile, beside the `chrome` folder |
 
 The PowerShell profile checks for Scoop shims, loads WinGet's command-not-found module when it is available, and adds Bun's user bin folder to `PATH`. Optional tools are skipped when they are not installed, so the profile should not fall apart just because one piece is missing.
 
@@ -100,7 +100,7 @@ The dark blue/purple and gray geometric wallpaper variants from this setup are i
 
 ### Zen Browser
 
-Zen is included as a visual config, not a full browser backup. Open `about:support` in Zen and use **Open Profile Folder**, then copy this repo's `zen/chrome/` folder and `zen/user.js` into that profile. The detailed notes are in [`zen/README.md`](zen/README.md).
+Zen is included as a visual config, not a full browser backup. Open `about:support` in Zen and use **Open Profile Folder**, then copy this repo's `zen-browser/chrome/` folder and `zen-browser/user.js` into that profile. The detailed notes are in [`zen-browser/README.md`](zen-browser/README.md).
 
 ### YASB weather
 

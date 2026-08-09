@@ -28,7 +28,7 @@ Or use GitHub's **Code** button and download the repo as a ZIP.
 1. Open Zen and go to `about:support`.
 2. In **Application Basics**, select **Open Profile Folder**.
 3. Close every Zen window. Make sure Zen is not still running in the background.
-4. Open `windows-dotfiles/zen/` from the downloaded or cloned repo.
+4. Open `windows-dotfiles/zen-browser/` from the downloaded or cloned repo.
 5. Copy its `chrome` folder into the Zen profile folder you opened.
 6. Copy `user.js` into that same profile folder, beside `chrome`.
 7. Start Zen again.
