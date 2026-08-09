@@ -7,6 +7,8 @@ The active Zen Mods are:
 - **Transparent Zen** by sameerasw: transparent browser surfaces, a 165px compact sidebar, URL-bar zoom, tab-switch animation, trackpad animation, and transparent Glance.
 - **Better Unloaded Tabs** by Felkazz: makes unloaded tabs greyscale and transparent.
 
+The matching UI-related `about:config` values are in `user.js`. They include compact mode, the titlebar layout, the Transparent Zen animation and tint choices, sidebar width, and the settings that are currently switched off. Zen writes a lot of changing profile data into `prefs.js`, so `user.js` is the clean shareable version rather than a direct copy of that whole file.
+
 It does not include the browser profile itself, installed Zen themes, or unused Zen Mods. Saved passwords, cookies, sessions, history, downloads, extensions, extension storage, sync data, workspace IDs, and search history are intentionally left out.
 
 ## Install
