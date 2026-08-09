@@ -13,13 +13,39 @@ It does not include the browser profile itself, installed Zen themes, or unused 
 
 ## Install
 
+### Get the files
+
+Clone the repo if you use Git:
+
+```powershell
+git clone https://github.com/mykeyy/windows-dotfiles.git
+```
+
+Or use GitHub's **Code** button and download the repo as a ZIP.
+
+### Copy the config
+
 1. Open Zen and go to `about:support`.
 2. In **Application Basics**, select **Open Profile Folder**.
-3. Close Zen completely.
-4. Copy this repo's `chrome` folder into that profile folder.
-5. Copy `user.js` into the same profile folder, beside `chrome`.
-6. Start Zen again.
+3. Close every Zen window. Make sure Zen is not still running in the background.
+4. Open `windows-dotfiles/zen/` from the downloaded or cloned repo.
+5. Copy its `chrome` folder into the Zen profile folder you opened.
+6. Copy `user.js` into that same profile folder, beside `chrome`.
+7. Start Zen again.
+
+The profile should look like this afterward:
+
+```text
+your Zen profile/
+|-- chrome/
+|   |-- userChrome.css
+|   |-- zen-themes.css
+|   `-- Nebula/
+`-- user.js
+```
+
+On the next launch Zen loads the custom CSS and the matching `about:config` preferences. That gives you Transparent Zen, Better Unloaded Tabs, the Nebula edge and spacing styling, compact mode, and the saved animation choices.
 
 `user.js` enables `toolkit.legacyUserProfileCustomizations.stylesheets`, which lets Zen load `chrome/userChrome.css`. If you already keep your own `user.js` or `chrome` folder, merge the files instead of replacing them.
 
-The CSS is built around Nebula and Zen themes, so a future Zen update can change how some parts look. Keep a backup of your own profile before changing it.
+The CSS is built around Nebula and Zen's UI, so a future Zen update can change how some parts look. Keep a backup of your own profile before changing it.
