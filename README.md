@@ -96,7 +96,7 @@ The Fastfetch config now uses the hardware from whichever PC runs it instead of 
 
 ### Wallpaper
 
-The dark geometric wallpaper from this setup is in [`wallpapers/`](wallpapers/). It is optional; the configs work without it. The quick install note is in [`wallpapers/README.md`](wallpapers/README.md).
+The dark blue/purple and gray geometric wallpaper variants from this setup are in [`wallpapers/`](wallpapers/). They are optional; the configs work without them. The quick install note is in [`wallpapers/README.md`](wallpapers/README.md).
 
 ### Zen Browser
 
